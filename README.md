@@ -130,7 +130,3 @@ tsc --watch
   npm run lint         # Check code quality
   npm run format       # Format code
 ```
-
-
-
-Continue your journey by building projects and exploring TypeScript with popular frameworks like React, Node.js, or Angular.
