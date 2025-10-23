@@ -1,0 +1,90 @@
+{
+  "name": "typescript-0-to-hero",
+  "version": "1.0.0",
+  "description": "A comprehensive TypeScript tutorial from beginner to advanced level",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "clean": "rm -rf dist",
+    "start": "node dist/src/index.js",
+    "dev": "tsx examples/01-basic/01-variables.ts",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write \"**/*.{ts,js,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,js,json,md}\"",
+    "type-check": "tsc --noEmit",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "run:basic": "tsx examples/01-basic/01-variables.ts",
+    "run:functions": "tsx examples/01-basic/02-functions.ts",
+    "run:arrays": "tsx examples/01-basic/03-arrays-objects.ts",
+    "run:types": "tsx examples/01-basic/04-type-annotations.ts",
+    "run:unions": "tsx examples/01-basic/05-union-literal.ts",
+    "run:interfaces": "tsx examples/02-intermediate/06-interfaces.ts",
+    "run:type-aliases": "tsx examples/02-intermediate/07-type-aliases.ts",
+    "run:extending": "tsx examples/02-intermediate/08-extending-interfaces.ts",
+    "run:classes": "tsx examples/02-intermediate/09-classes.ts",
+    "run:inheritance": "tsx examples/02-intermediate/10-inheritance.ts",
+    "run:access": "tsx examples/02-intermediate/11-access-modifiers.ts",
+    "run:generics": "tsx examples/02-intermediate/12-basic-generics.ts",
+    "run:constraints": "tsx examples/02-intermediate/13-generic-constraints.ts",
+    "run:mapped": "tsx examples/03-advanced/14-mapped-types.ts",
+    "run:conditional": "tsx examples/03-advanced/15-conditional-types.ts",
+    "run:utility": "tsx examples/03-advanced/16-utility-types.ts",
+    "run:modules": "tsx examples/03-advanced/17-modules.ts",
+    "run:namespaces": "tsx examples/03-advanced/18-namespaces.ts",
+    "run:decorators": "tsx examples/03-advanced/19-decorators.ts",
+    "run:patterns": "tsx examples/03-advanced/20-advanced-patterns.ts",
+    "run:all-basic": "npm run run:basic && npm run run:functions && npm run run:arrays && npm run run:types && npm run run:unions",
+    "run:all-intermediate": "npm run run:interfaces && npm run run:type-aliases && npm run run:extending && npm run run:classes && npm run run:inheritance && npm run run:access && npm run run:generics && npm run run:constraints",
+    "run:all-advanced": "npm run run:mapped && npm run run:conditional && npm run run:utility && npm run run:modules && npm run run:namespaces && npm run run:decorators && npm run run:patterns",
+    "run:all": "npm run run:all-basic && npm run run:all-intermediate && npm run run:all-advanced"
+  },
+  "keywords": [
+    "typescript",
+    "tutorial",
+    "javascript",
+    "programming",
+    "types",
+    "education",
+    "examples",
+    "beginner",
+    "intermediate",
+    "advanced"
+  ],
+  "author": "TypeScript Tutorial",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.40.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "jest": "^29.5.0",
+    "prettier": "^3.0.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pandaind/typescript-0-to-hero.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pandaind/typescript-0-to-hero/issues"
+  },
+  "homepage": "https://github.com/pandaind/typescript-0-to-hero#readme"
+}
